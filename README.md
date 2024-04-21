@@ -16,16 +16,18 @@ python3 -m venv .venv
 . .venv/bin/activate
 ```
 
-3. Install Flask
+1. Install
 
 ```sh
 pip install Flask
+pip install "fastapi[all]"
 ```
 
 4. Run
 
 ```sh
 flask run --reload
+uvicorn main:app --reload
 ```
 
 ## References
